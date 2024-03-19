@@ -1,0 +1,6 @@
+#Name: Andre Sealy
+#Email: andre.sealy72@myhunter.cuny.edu
+#Date: March 9th, 2024
+#This program prints a Unix command that says "Hello, World."
+
+echo "Hello, World"
