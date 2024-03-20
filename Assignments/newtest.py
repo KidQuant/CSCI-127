@@ -1,17 +1,22 @@
-def primes(n: int):
-    """Return a list of the first n primes."""
-    sieve = [True] * n
-
-    res = []
-
-    for i in range(2, n):
-        if sieve[i]:
-            res.append(i)
-            for j in range(i * i, n, i):
-                sieve[j] = False
-
-    return res
+def enigma(x, y, z):
+    if x == len(y):
+        return z
+    elif x < len(y):
+        return y[x:]
+    else:
+        s = foo(z)
+        return s + y
 
 
-xs = primes(100)
-print(xs)
+def foo(w):
+    r = ""
+    for i in range(len(w) - 1, -1, -1):
+        r = r + w[i]
+    return r
+
+
+one = enigma(7, "carmamel", "ducle de leche")
+two = enigma(3, "cupcake", "vanilla")
+three = enigma(10, "pie", "nomel")
+
+print(one, two, three)

@@ -10,6 +10,7 @@ outputFile = input("Enter output file: ")
 
 img = plt.imread(inputFile)
 
+
 height = img.shape[0]
 width = img.shape[1]
 

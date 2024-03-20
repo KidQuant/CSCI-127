@@ -6,6 +6,7 @@ int main() {
 
   cout << "How many items did you eat today? ";
   cin >> numberOfItems;
+
   totalCalories = 0;
   count = 1;
   cout << "Enter the number of calories in each of the\n"
