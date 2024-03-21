@@ -9,7 +9,7 @@ inputFile = input("Enter name of input file: ")
 outputFile = input("Enter name of output file: ")
 
 homeless = pd.read_csv(inputFile)
-homeless = homeless
+
 homeless["Fraction Children"] = (
     homeless["Total Children in Shelter"] / homeless["Total Individuals in Shelter"]
 )
