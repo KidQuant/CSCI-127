@@ -7,10 +7,10 @@ import turtle
 
 turtle.colormode(255)
 andre = turtle.Turtle()
-andre.shape('turtle')
+andre.shape("turtle")
 andre.backward(100)
 
 for i in range(0, 255, 10):
     andre.forward(10)
     andre.pensize(i)
-    andre.color(0,0,i)
+    andre.color(0, 0, i)

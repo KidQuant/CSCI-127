@@ -5,14 +5,14 @@
 
 import string
 
-alphabet = string.ascii_lowercase                   # imports the lowercase alphabet
+alphabet = string.ascii_lowercase  # imports the lowercase alphabet
 
-codeWord = input('Enter a word: ')
+codeWord = input("Enter a word: ")
 
 encoded = ""
 
 for char in codeWord:
-    idx = (ord(char) - ord('a')) - 13
+    idx = (ord(char) - ord("a")) - 13
 
     encoded = encoded + alphabet[idx]
 
