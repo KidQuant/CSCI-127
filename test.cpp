@@ -1,16 +1,11 @@
-//Mystery C++, #3
+// Mystery C++, #2
 #include <iostream>
 using namespace std;
 
-int main(){
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 4; j++) {
-            if (j % 2 == 0) {
-                cout << "+";
-            } else {
-                cout << "-";
-            }
-        }
-        cout << endl;
-    }
+int main() {
+  int sum = 3;
+  while (sum < 10) {
+    cout << sum;
+    sum = sum + sum;
+  }
 }

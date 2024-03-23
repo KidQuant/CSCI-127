@@ -1,22 +1,8 @@
-def enigma(x, y, z):
-    if x == len(y):
-        return z
-    elif x < len(y):
-        return y[x:]
-    else:
-        s = foo(z)
-        return s + y
+# Sample program for looping
 
+magicians = ["alice", "david", "carolina"]
+for magician in magicians:
+    print(f"{magician.title()}, that was a great trick!")
+    print(f"I can't wait to see you next trick, {magician.title()}.\n")
 
-def foo(w):
-    r = ""
-    for i in range(len(w) - 1, -1, -1):
-        r = r + w[i]
-    return r
-
-
-one = enigma(7, "carmamel", "ducle de leche")
-two = enigma(3, "cupcake", "vanilla")
-three = enigma(10, "pie", "nomel")
-
-print(one, two, three)
+print("Thank you, everyone. That was a great magic show!")
