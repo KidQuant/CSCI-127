@@ -1,25 +1,16 @@
-import turtle
+def squareit(n):
+    return n * n
 
 
-def drawMulticolorSqaure(t, sz):
-    """Make turtle t draw a multi-color square of sz."""
-    for i in ["red", "purple", "hotpink", "blue"]:
-        t.color(i)
-        t.forward(sz)
-        t.left(90)
+def cubeit(n):
+    return n * n * n
 
 
-wn = turtle.Screen()
-wn.bgcolor("lightgreen")
+def main():
+    anum = int(input("Please enter a number: "))
+    print(squareit(anum))
+    print(cubeit(anum))
 
-tess = turtle.Turtle()
-tess.pensize(3)
 
-size = 20
-for i in range(15):
-    drawMulticolorSqaure(tess, size)
-    size = size + 10
-    tess.forward(10)
-    tess.right(18)
-
-wn.exitonclick()
+if __name__ == "__main__":
+    main()
