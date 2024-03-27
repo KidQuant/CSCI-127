@@ -1,16 +1,24 @@
-def squareit(n):
-    return n * n
+def num2string(num):
+    numString = ""
+    numList = [
+        "zero",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+    ]
+
+    number = numList[num]
+
+    numString = numString + number
+
+    print(numString)
+    return numString
 
 
-def cubeit(n):
-    return n * n * n
-
-
-def main():
-    anum = int(input("Please enter a number: "))
-    print(squareit(anum))
-    print(cubeit(anum))
-
-
-if __name__ == "__main__":
-    main()
+num2string(9)
