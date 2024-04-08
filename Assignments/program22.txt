@@ -1,6 +1,7 @@
 #Name: Andre Sealy
 #Email: andre.sealy72@myhunter.cuny.edu
 #Date: March 7th, 2024
+
 #The has the same behavior as a nand date 
 
 out = not(in1 and in2)

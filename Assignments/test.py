@@ -1,24 +1,16 @@
-def num2string(num):
-    numString = ""
-    numList = [
-        "zero",
-        "one",
-        "two",
-        "three",
-        "four",
-        "five",
-        "six",
-        "seven",
-        "eight",
-        "nine",
-    ]
+import folium
+import pandas as pd
 
-    number = numList[num]
+cuny = pd.read_csv("CUNYcampuses.csv")
+print(cuny["Campus"])
 
-    numString = numString + number
+mapCUNY = folium.Map(location=[40.768731, -73.964915])
 
-    print(numString)
-    return numString
+for index, row in cuny.iterrows():
+    lat = row["Latitude"]
+    lon = row["Longitude"]
+    name = row["Campus"]
+    newMarker = folium.Marker([lat, lon], popup=name)
+    newMarker.add_to(mapCUNY)
 
-
-num2string(9)
+mapCUNY.save(outfile="cunyLocations.html")
