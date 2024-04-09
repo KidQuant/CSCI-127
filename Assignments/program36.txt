@@ -1,0 +1,8 @@
+#Name: Andre Sealy
+#Email: andre.sealy72@myhunter.cuny.edu
+#Date: April 7th, 2024
+#Logical expression for a 4-bit incrementer
+
+out1 = 00
+out2 = (False and True) and False
+out3 = (True and False) and True

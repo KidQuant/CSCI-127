@@ -12,7 +12,7 @@ def setUp(t, dist, col):
     to move the turtle and a color, col, to set the turtle's color.
     """
     t.penup()
-    t.forward()
+    t.forward(dist)
     t.pendown()
     t.color(col)
 
