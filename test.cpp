@@ -1,11 +1,22 @@
-// Mystery C++, #2
+#include <fstream>
 #include <iostream>
-using namespace std;
+#include <string>
 
+using namespace std;
 int main() {
-  int sum = 3;
-  while (sum < 10) {
-    cout << sum;
-    sum = sum + sum;
-  }
+    int random;
+    string firstName, lastName;
+    int score;
+    fstream inputStream;
+
+    inputStream.open("player.txt");
+
+    inputStream >> score;
+    inputStream >> firstName >> lastName;
+
+    cout << "Name: " << firstName << " " << lastName << endl;
+    cout << "Score: " << score << endl;
+    inputStream.close();
+
+    return 0;
 }
