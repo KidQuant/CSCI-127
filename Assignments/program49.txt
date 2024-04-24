@@ -1,0 +1,11 @@
+# Name: Andre Sealy
+# Email: andre.sealy72@myhunter.cuny.edu
+# Date: April 23rd, 2024
+# This program loops from numbers 50 to 0
+
+ADDI $s0, $zero, 0
+ADDI $s1, $zero, 50
+AGAIN: ADDI $s0, $s0, 5
+BEG $s0, $s1, DONE
+J AGAIN
+DONE:

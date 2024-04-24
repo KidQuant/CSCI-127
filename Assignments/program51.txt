@@ -1,0 +1,6 @@
+#Name: Andre Sealy
+#Email: andre.sealy72@myhunter.cuny.edu
+#Date: April 23rd, 2024
+#This script counts files with the "py" extension
+
+ls -l | grep ".py" | wc -l

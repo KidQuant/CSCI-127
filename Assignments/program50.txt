@@ -1,0 +1,9 @@
+#Name: Andre Sealy
+#Email: andre.sealy72@myhunter.cuny.edu
+#Date: April 23rd, 2024
+# This is a Unix Script
+
+mkdir projectFiles && cd projectFiles
+mkdir source
+mkdir data
+mkdir results
